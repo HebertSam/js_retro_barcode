@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  // colors = ["green", "red", 'blue', "yellow"]
+  // rand = Math.floor(Math.random()* this.colors.length);
+  randColor(){
+    let colors = ["green", "red", 'blue', "yellow"]
+    let rand = Math.floor(Math.random()* colors.length);
+    return colors[rand];
+  }
+
 }
